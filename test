@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查看解析</title>
+    <link rel="stylesheet" type="text/css" href="/net/Content/exam/theme/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="/net/Content/exam/theme/css/iconfont2.css">
+    <link rel="stylesheet" type="text/css" href="/net/Content/exam/theme/css/jgrz_index.css">
+    <link rel="stylesheet" type="text/css" href="/net/Content/exam/theme/css/grdd.css">
+    <script src="/net/Content/exam/theme/js/jquery-3.4.1.min.js"></script>
+    <style type="text/css">
+        #top {
+            cursor: pointer;
+        }
+
+        .mar {
+            color: #32b16c !important;
+        }
+
+        #Mmqt {
+            max-height: 127px;
+            line-height: 42px;
+            font-size: 14px;
+        }
+
+        #Mmqtpre {
+            max-height: 127px;
+            line-height: 29px;
+            overflow-y: scroll;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper-con">
+            <!-- 头部 -->
+            <!--主要内容开始-->
+            <div class="examination_content">
+                <div class="banner">
+                    <div class="wid1300">
+                        <div class="banner_title" id="Mpn"></div>
+                        <div class="wid1050">
+                            <div class="banner_hint">
+                                    <span>姓名：<span id=""></span></span>
+
+                                <span>总题数：<span id="Mqc"></span>题</span>
+                                <span>试卷类型：<span id="Mpt"></span></span>
+                                <span>考试时间：<span id="Mlt"></span>分钟</span>
+                                <span id="isMp">发布成绩：<span id="Mpubic"></span></span>
+                            </div>
+                            <div class="require">
+                                <div id="Mmqt">
+                                    <pre id="Mmqtpre">本次测验答题时间为8月15日-26日，60分及格，每人有一次补考机会。</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test_questions">
+                    <input type="hidden" id="pgid" value="cf18e1ab22a3469ca756994492fedfb8" />
+                    <input type="hidden" id="QuestCount" value="" />
+                    <input type="hidden" id="eid" value="162856" />
+                    <input type="hidden" id="PaperTypeRandom" value="1" />
+                    <div class="wid1300">
+                        <div style="display: flex;" id="topBpx">
+                            <div class="test_questions_right2">
+                                <div id="no-off2">
+                                    <div class="test_questions_rightT2">
+                                   
+                                        <div class="emblem">
+                                            <img src="/net/Content/exam/theme/images/huizhang_03.png" alt="">
+                                            <span id="Mscore"></span>
+                                        </div>
+                                        <div class="grade">
+                                            <div>
+                                                用时<br />
+                                                当前排名<br />
+                                                最高分<br />
+                                                平均分
+                                            </div>
+                                            <div>
+                                                <div><span id="Mcost"></span>分钟</div>
+                                                <div><span id="Mrank"></span>名</div>
+                                                <div><span id="Mmax"></span>分</div>
+                                                <div><span id="Mavg"></span>分</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="test_questions_rightB2">
+                                        <div id="qleft">
+                                        </div>
+                                        <div class="title_biaoji2">
+                                            <span>正确</span>
+                                            <span>错误</span>
+                                            <span>未做</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test_questions_left">
+                                <form action="" class="layui-form">
+                                    <div id="questBlock">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--主要内容结束-->
+
+
+
+            <div class="wc-panel">
+                <div class="footer-panel">
+                    <div class="footer-con wid1300">
+                        
+                        <div class="footer-bot clearfix">
+                            <div class="fb-l fl">
+                                <img src="/net/new-k/images/logoF.png" class="vam">
+                                <div class="fbl-r">
+                                    <p>
+                                        京 ICP 证 040431 号网络出版服务许可证 (总)网出证(京)字第 271 号出版物经营许可证 京公网安备 11010802020460 号<br>
+                                        <span style="cursor:pointer;" onclick="showimg('/new-k/images/footer-c.jpg');">广播电视节目制作经营许可证 (京)字第 16414 号</span>
+                                    </p>
+                                    <p>《中国学术期刊（光盘版）》电子杂志社有限公司 KDN 平台基础技术由 KBASE 11.0 提供.</p>
+                                </div>
+                            </div>
+                            <div class="fb-r fr">
+                                <a href="https://ss.knet.cn/verifyseal.dll?sn=e13111111010043364isll000000&amp;a=1&amp;pa=0.08881110103584755" target="_blank"><img src="/net/new-k/images/footer-b.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="top"><i class="layui-icon layui-icon-top"></i></div>
+    <script src="/net/Content/exam/theme/layui/layui.js"></script>
+    <script src="/net/Content/exam/theme/js/th-answer.js?v=1025"></script>
+    <script src="/net/Content/exam/theme/js/index.js?v=1011"></script>
+    <script type="text/javascript" src="/net/Content/exam/theme/js/iconfont.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.testQuestions_head').find('img').each(function () {
+                if (parseInt($(this).css("width").replace('px', '')) > 900) {
+                    $(this).css("width", "900px");
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
